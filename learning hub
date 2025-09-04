@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sir Jom's Learning Hub - Your Gateway to Knowledge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .quote-animation {
+            animation: fadeInOut 8s infinite;
+        }
+        @keyframes fadeInOut {
+            0%, 20%, 80%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 gradient-bg rounded-full flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">Sir Jom's Learning Hub</h1>
+                        <p class="text-sm text-green-600 font-medium">Your Gateway to Knowledge</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Home</a>
+                    <a href="#powerpoints" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">PowerPoints</a>
+                    <a href="#activities" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Activities</a>
+                    <a href="#resources" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Resources</a>
+                    <a href="#student-corner" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">Student Corner</a>
+                </nav>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-5xl font-bold text-white mb-6">Welcome to Your Learning Journey</h2>
+                <p class="text-xl text-blue-100 mb-8">Discover comprehensive educational resources, engaging activities, and interactive learning materials designed to help you excel in your studies.</p>
+                
+                <!-- Search Bar -->
+                <div class="bg-white rounded-2xl p-6 shadow-2xl max-w-4xl mx-auto">
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="relative">
+                            <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select Grade</option>
+                                <option value="grade-1">Grade 1</option>
+                                <option value="grade-2">Grade 2</option>
+                                <option value="grade-3">Grade 3</option>
+                                <option value="grade-4">Grade 4</option>
+                                <option value="grade-5">Grade 5</option>
+                                <option value="grade-6">Grade 6</option>
+                                <option value="grade-7">Grade 7</option>
+                                <option value="grade-8">Grade 8</option>
+                                <option value="grade-9">Grade 9</option>
+                                <option value="grade-10">Grade 10</option>
+                            </select>
+                        </div>
+                        <div class="relative">
+                            <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="">Select Subject</option>
+                                <option value="math">Mathematics</option>
+                                <option value="science">Science</option>
+                                <option value="english">English</option>
+                                <option value="social">Social Studies</option>
+                                <option value="filipino">Filipino</option>
+                                <option value="education">Education</option>
+                                <option value="tle">TLE</option>
+                                <option value="mapeh">MAPEH</option>
+                                <option value="esp">ESP</option>
+                                <option value="araling-panlipunan">Araling Panlipunan</option>
+                            </select>
+                        </div>
+                        <div class="relative">
+                            <input type="text" placeholder="Enter topic..." class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        </div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                            <i class="fas fa-search mr-2"></i>Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Motivational Quote -->
+    <section class="bg-green-50 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="quote-animation">
+                <p class="text-2xl font-medium text-gray-700 italic">"Education is the most powerful weapon which you can use to change the world."</p>
+                <p class="text-green-600 font-semibold mt-2">- Nelson Mandela</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Sections -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- PowerPoints Section -->
+                <div id="powerpoints" class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-presentation text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">PowerPoints</h3>
+                        <p class="text-gray-600">Interactive presentations for every lesson</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm font-medium">Math - Fractions</span>
+                            <button class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm font-medium">Science - Solar System</span>
+                            <button class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm font-medium">English - Grammar</span>
+                            <button class="text-blue-600 hover:text-blue-800">
+                                <i class="fas fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-medium transition-colors">
+                        View All PowerPoints
+                    </button>
+                </div>
+
+                <!-- Activities Section -->
+                <div id="activities" class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-puzzle-piece text-green-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Activities</h3>
+                        <p class="text-gray-600">Engaging exercises and worksheets</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm font-medium">Math Quiz - Grade 4</span>
+                            <button class="text-green-600 hover:text-green-800">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm font-medium">Word Search</span>
+                            <button class="text-green-600 hover:text-green-800">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm font-medium">Science Experiment</span>
+                            <button class="text-green-600 hover:text-green-800">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="w-full mt-6 bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg font-medium transition-colors">
+                        Browse Activities
+                    </button>
+                </div>
+
+                <!-- Resources Section -->
+                <div id="resources" class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-book text-purple-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Resources</h3>
+                        <p class="text-gray-600">Study guides and reference materials</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm font-medium">Study Guide - History</span>
+                            <button class="text-purple-600 hover:text-purple-800">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm font-medium">Formula Sheet</span>
+                            <button class="text-purple-600 hover:text-purple-800">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
+                            <span class="text-sm font-medium">Reading List</span>
+                            <button class="text-purple-600 hover:text-purple-800">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="w-full mt-6 bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-medium transition-colors">
+                        Explore Resources
+                    </button>
+                </div>
+
+                <!-- Student Corner Section -->
+                <div id="student-corner" class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+                    <div class="text-center mb-6">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-users text-orange-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Student Corner</h3>
+                        <p class="text-gray-600">Community and collaboration space</p>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <div class="w-6 h-6 bg-blue-500 rounded-full"></div>
+                                <span class="text-sm font-medium">Maria S.</span>
+                            </div>
+                            <p class="text-xs text-gray-600">"Great math resources! Really helped with fractions."</p>
+                        </div>
+                        <div class="p-3 bg-gray-50 rounded-lg">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <div class="w-6 h-6 bg-green-500 rounded-full"></div>
+                                <span class="text-sm font-medium">John D.</span>
+                            </div>
+                            <p class="text-xs text-gray-600">"The science experiments are amazing!"</p>
+                        </div>
+                    </div>
+                    <button class="w-full mt-6 bg-orange-600 hover:bg-orange-700 text-white py-3 rounded-lg font-medium transition-colors">
+                        Join Discussion
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Notice -->
+    <section class="bg-blue-50 py-8">
+        <div class="container mx-auto px-6">
+            <div class="bg-white rounded-2xl p-6 shadow-lg max-w-4xl mx-auto">
+                <div class="flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                        <i class="fas fa-info-circle text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-gray-800">For Educators</h4>
+                        <p class="text-gray-600">Admin access required for uploading new content. Students can view and download all available materials.</p>
+                    </div>
+                    <button class="ml-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
+                        Admin Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Motivational Quotes -->
+    <section class="py-12 bg-gradient-to-r from-green-400 to-blue-500">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="text-white">
+                    <i class="fas fa-lightbulb text-4xl mb-4"></i>
+                    <p class="text-lg font-medium italic">"The beautiful thing about learning is that no one can take it away from you."</p>
+                    <p class="text-sm mt-2 opacity-90">- B.B. King</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-rocket text-4xl mb-4"></i>
+                    <p class="text-lg font-medium italic">"Education is not preparation for life; education is life itself."</p>
+                    <p class="text-sm mt-2 opacity-90">- John Dewey</p>
+                </div>
+                <div class="text-white">
+                    <i class="fas fa-star text-4xl mb-4"></i>
+                    <p class="text-lg font-medium italic">"The more that you read, the more things you will know."</p>
+                    <p class="text-sm mt-2 opacity-90">- Dr. Seuss</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 gradient-bg rounded-full flex items-center justify-center">
+                            <i class="fas fa-graduation-cap text-white"></i>
+                        </div>
+                        <h5 class="text-xl font-bold">Sir Jom's Learning Hub</h5>
+                    </div>
+                    <p class="text-gray-400">Empowering students through quality education and innovative learning resources.</p>
+                </div>
+                
+                <div>
+                    <h6 class="text-lg font-semibold mb-4">Quick Links</h6>
+                    <ul class="space-y-2">
+                        <li><a href="#powerpoints" class="text-gray-400 hover:text-white transition-colors">PowerPoints</a></li>
+                        <li><a href="#activities" class="text-gray-400 hover:text-white transition-colors">Activities</a></li>
+                        <li><a href="#resources" class="text-gray-400 hover:text-white transition-colors">Resources</a></li>
+                        <li><a href="#student-corner" class="text-gray-400 hover:text-white transition-colors">Student Corner</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h6 class="text-lg font-semibold mb-4">Contact Info</h6>
+                    <div class="space-y-2">
+                        <p class="text-gray-400 flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            sirjom@learninghub.edu
+                        </p>
+                        <p class="text-gray-400 flex items-center">
+                            <i class="fas fa-phone mr-3"></i>
+                            +63 123 456 7890
+                        </p>
+                        <p class="text-gray-400 flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Manila, Philippines
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h6 class="text-lg font-semibold mb-4">Follow Us</h6>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 Sir Jom's Learning Hub. All rights reserved. Made with ❤️ for education.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Search functionality
+        document.querySelector('button[class*="bg-blue-600"]').addEventListener('click', function() {
+            const grade = document.querySelector('select').value;
+            const subject = document.querySelectorAll('select')[1].value;
+            const topic = document.querySelector('input[type="text"]').value;
+            
+            if (grade || subject || topic) {
+                alert(`Searching for:\nGrade: ${grade || 'Any'}\nSubject: ${subject || 'Any'}\nTopic: ${topic || 'Any'}\n\nResults would appear here in a real implementation!`);
+            } else {
+                alert('Please select at least one search criteria.');
+            }
+        });
+
+        // Interactive buttons for sections
+        document.querySelectorAll('.card-hover button').forEach(button => {
+            button.addEventListener('click', function() {
+                const section = this.closest('.card-hover').querySelector('h3').textContent;
+                const action = this.textContent.trim();
+                
+                if (action.includes('View All') || action.includes('Browse') || action.includes('Explore') || action.includes('Join')) {
+                    alert(`Opening ${section} section...\nThis would navigate to the full ${section.toLowerCase()} page in a real implementation!`);
+                } else if (this.querySelector('.fa-download')) {
+                    alert('Download started! File would be downloaded in a real implementation.');
+                } else if (this.querySelector('.fa-play')) {
+                    alert('Activity launched! Interactive content would open in a real implementation.');
+                } else if (this.querySelector('.fa-eye')) {
+                    alert('Resource opened! Content would be displayed in a real implementation.');
+                }
+            });
+        });
+
+        // Admin login button
+        document.querySelector('button:contains("Admin Login")') || document.querySelectorAll('button').forEach(btn => {
+            if (btn.textContent.includes('Admin Login')) {
+                btn.addEventListener('click', function() {
+                    alert('Admin login would redirect to secure authentication page.\nNote: This is a demo - actual admin features would require backend implementation.');
+                });
+            }
+        });
+
+        // Rotating quotes
+        const quotes = [
+            {
+                text: "Education is the most powerful weapon which you can use to change the world.",
+                author: "Nelson Mandela"
+            },
+            {
+                text: "The beautiful thing about learning is that no one can take it away from you.",
+                author: "B.B. King"
+            },
+            {
+                text: "Education is not preparation for life; education is life itself.",
+                author: "John Dewey"
+            },
+            {
+                text: "The more that you read, the more things you will know.",
+                author: "Dr. Seuss"
+            }
+        ];
+
+        let currentQuote = 0;
+        setInterval(() => {
+            const quoteElement = document.querySelector('.quote-animation');
+            if (quoteElement) {
+                currentQuote = (currentQuote + 1) % quotes.length;
+                quoteElement.innerHTML = `
+                    <p class="text-2xl font-medium text-gray-700 italic">"${quotes[currentQuote].text}"</p>
+                    <p class="text-green-600 font-semibold mt-2">- ${quotes[currentQuote].author}</p>
+                `;
+            }
+        }, 8000);
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'979b70b8e756bc34',t:'MTc1Njk2NzQ0OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
